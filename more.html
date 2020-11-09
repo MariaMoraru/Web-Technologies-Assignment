@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mariame5 - Map API</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+<header>
+	<div class="menu">
+		<a href="about-me.html">About Me</a>		
+		<a href="contact.html">Contact Me</a>
+		<a href="privacy-policy.html">Privacy Policy</a>
+		<a href="more.html">More</a>
+	</div>
+</header>
+
+<section class="content">
+	<div id="map"></div>
+</section>
+
+<footer>
+	<div class="menu">
+		<div class="text-center">
+			<p>Maria Moraru, Copyright &copy; 2020</p>
+	    </div>
+	</div>
+</footer>
+<script type="text/javascript">
+// Javascript 3rd part API
+let map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8,
+  });
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPT1hEXIgy0exY5iOWHkKMuhl2Ssx1I78&callback=initMap"></script>
+
+</body>
+</html>
